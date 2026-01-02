@@ -6,6 +6,8 @@
   <img src="Animation.gif" alt="Dashboard Demo" width="100%">
 </p>
 
+> 🎬 **Live Dashboard Demo**: Interactive visualization showing GA4 eCommerce funnel analysis with real-time metrics and insights.
+
 ## 📈 Overview
 
 This project analyzes Google Analytics 4 (GA4) eCommerce funnel data using BigQuery SQL queries and visualizes insights in Looker Studio. The analysis tracks user behavior through the purchase funnel, identifies drop-off points, and provides actionable insights for conversion optimization.
@@ -17,14 +19,6 @@ This project analyzes Google Analytics 4 (GA4) eCommerce funnel data using BigQu
 - **Device Performance**: Compare conversion rates across different devices
 - **Time-to-Purchase**: Understand customer decision-making timelines
 - **Interactive Dashboards**: Visual insights via Looker Studio
-
-## 📊 Dashboard Screenshots
-
-### Funnel Overview
-![Funnel Overview](Dashboard_Funnel_Overview.png)
-
-### Event Transitions
-![Event Transitions](Dashboard_Event_Transitions.png)
 
 ## 🔧 SQL Queries
 
