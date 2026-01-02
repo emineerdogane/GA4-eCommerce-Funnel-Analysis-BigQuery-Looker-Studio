@@ -1,3 +1,9 @@
+-- Purpose: Calculate time-to-purchase metrics segmented by device type
+-- Output: device_time_to_purchase (VIEW)
+-- Business Question:
+--   Do users on different devices convert at different speeds?
+-- Median used to reduce skew from long-tail sessions
+
 WITH raw_events AS (
   SELECT
     user_pseudo_id,

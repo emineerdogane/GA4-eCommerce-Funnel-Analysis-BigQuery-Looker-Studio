@@ -1,3 +1,10 @@
+-- Purpose: Analyze sequential GA4 event transitions and average time between events
+-- Output: event_transitions (VIEW)
+-- Key Technique:
+--   LEAD() window function to compute event-to-event latency
+-- Business Question:
+--   How long do users take between key behavioral steps?
+
 WITH
   funnel_events AS (
     SELECT

@@ -1,3 +1,9 @@
+-- Purpose: Transform funnel_summary into a long-format table using UNPIVOT
+-- Output: funnel_data_for_viz (VIEW)
+-- Use Case: Enables proper funnel visualization in Looker Studio
+-- Business Question:
+--   How many users remain at each step of the funnel?
+
 SELECT
   funnel_step,
   sessions_count,

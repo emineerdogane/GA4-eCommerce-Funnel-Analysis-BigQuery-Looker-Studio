@@ -1,3 +1,14 @@
+-- Project: GA4 eCommerce Funnel Analysis
+-- Purpose: Reconstruct session-level user journeys and compute funnel conversion metrics
+-- Dataset: bigquery-public-data.ga4_obfuscated_sample_ecommerce
+-- Output: funnel_summary (VIEW)
+-- Key Techniques:
+--   - Session reconstruction using cumulative SUM window function
+--   - First-occurrence timestamps per funnel step
+--   - Conversion and drop-off rate calculations
+-- Business Question:
+--   Where do users drop off between session start and purchase?
+
 WITH raw_events AS (
   SELECT
     user_pseudo_id,
