@@ -2,14 +2,8 @@
 
 ## 📊 Dashboard Preview
 
-### 🎬 [▶️ Watch Dashboard Demo Video](https://github.com/emineerdogane/GA4-eCommerce-Funnel-Analysis-BigQuery-Looker-Studio/raw/main/GA4%20Funnel%20Analysis.mp4)
-
 <p align="center">
-  <a href="https://github.com/emineerdogane/GA4-eCommerce-Funnel-Analysis-BigQuery-Looker-Studio/raw/main/GA4%20Funnel%20Analysis.mp4">
-    <img src="Dashboard_Funnel_Overview.png" alt="Dashboard Preview" width="80%">
-    <br>
-    <em>👆 Click to watch the interactive dashboard demo</em>
-  </a>
+  <img src="Animation.gif" alt="Dashboard Demo" width="100%">
 </p>
 
 ## 📈 Overview
