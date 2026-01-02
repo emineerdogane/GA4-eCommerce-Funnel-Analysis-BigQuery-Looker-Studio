@@ -58,38 +58,22 @@ GA4-eCommerce-Funnel-Analysis-BigQuery-Looker-Studio/
 - **~30% of users drop off between View Item → Add to Cart**, indicating early funnel friction
 - **Desktop users take longer to convert than mobile users**, suggesting higher decision complexity
 - **Conversion challenges occur before checkout, not during payment**
-- Critical drop-off points identified for targeted UX improvements
 
-## 🔧 SQL Queries & Technical Details
+## 🔧 SQL Queries
 
-### BigQuery Data Modeling
-
-#### 1. `funnel_summary.sql`
+#### `funnel_summary.sql`
 Computes session counts and conversion percentages for each funnel step.
-- Calculates conversion rates at each stage
-- Identifies drop-off rates between steps
-- Provides session-level funnel metrics
 
-#### 2. `funnel_data_for_viz.sql`
-To support funnel charts in Looker Studio, the `funnel_summary` view is transformed into a long format using `UNPIVOT`.
-- Converts funnel step columns into rows
-- Enables proper funnel chart rendering
-- Provides flexible step ordering
-- Cleaner visualization logic in Looker Studio
+#### `funnel_data_for_viz.sql`
+Transforms funnel data into long format using `UNPIVOT` for Looker Studio funnel chart visualization.
 
-#### 3. `event_transitions.sql`
+#### `event_transitions.sql`
 Uses `LEAD()` window function to calculate average time between sequential GA4 events.
-- Analyzes user flow between different events
-- Identifies common conversion paths
-- Measures latency between user actions
 
-#### 4. `device_time_to_purchase.sql`
+#### `device_time_to_purchase.sql`
 Calculates average and median time-to-purchase segmented by device type.
-- Compares conversion times across mobile, desktop, and tablet
-- Identifies device-specific behavior patterns
-- Supports device optimization strategies
 
-All tables are implemented as **BigQuery views** to ensure reproducibility using the public dataset.
+> All queries are implemented as **BigQuery views** to ensure reproducibility using the public dataset.
 
 ## 🚀 Getting Started
 
@@ -140,37 +124,9 @@ Screenshots of the dashboards are included in this repository.
 
 ## 🔮 What I Would Do Next
 
-- **Analyze funnel drop-offs by product category** to identify category-specific friction points
-- **Add cohort analysis for returning vs. new users** to understand behavior differences
-- **Implement attribution modeling** to understand multi-touch conversion paths
-- **Validate UX hypotheses through A/B testing** based on identified drop-off points
-- **Build predictive models** for purchase propensity
-- **Expand device analysis** to include browser and OS segmentation
-
-## 📈 Insights & Findings
-
-This analysis provides actionable insights for eCommerce optimization:
-
-### Conversion Funnel Performance
-- **Overall Conversion Rate**: Track end-to-end conversion from product view to purchase
-- **Stage-by-Stage Analysis**: Identify which funnel stages have the highest drop-off rates
-- **Bottleneck Identification**: Pinpoint specific steps where users abandon their journey
-- **~30% drop-off between View Item → Add to Cart** indicates early funnel friction requiring immediate attention
-
-### Device-Specific Patterns
-- **Mobile vs Desktop Performance**: Compare conversion rates across device categories
-- **Time-to-Purchase Variations**: Desktop users demonstrate higher decision complexity with longer purchase times
-- **Device Optimization Opportunities**: Identify which devices need UX improvements
-
-### User Behavior Insights
-- **Common Conversion Paths**: Discover the most successful event sequences leading to purchase
-- **Drop-off Points**: Conversion challenges occur before checkout, not during payment
-- **Engagement Patterns**: Analyze user interaction patterns before conversion
-
-### Business Impact
-- **Revenue Optimization**: Identify high-impact areas for improving conversion rates
-- **Marketing ROI**: Understand which channels and campaigns drive better funnel performance
-- **User Experience Improvements**: Data-driven recommendations for UX enhancements
+- Analyze funnel drop-offs by product category
+- Add cohort analysis for returning vs. new users
+- Validate UX hypotheses through A/B testing
 
 ## 🤝 Contributing
 
