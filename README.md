@@ -2,11 +2,9 @@
 
 ## 📊 Dashboard Preview
 
-![Dashboard Demo](dashboard-demo.gif)
+https://github.com/emineerdogane/GA4-eCommerce-Funnel-Analysis-BigQuery-Looker-Studio/assets/GA4%20Funnel%20Analysis.mp4
 
-<!-- Alternatif olarak video için:
-<video src="https://user-images.githubusercontent.com/your-video.mp4" controls></video>
--->
+> 📹 **Interactive Dashboard Demo**: Watch the full walkthrough of the GA4 eCommerce Funnel Analysis dashboard in action.
 
 ## 📈 Overview
 
