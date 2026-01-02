@@ -75,45 +75,14 @@ Calculates average and median time-to-purchase segmented by device type.
 
 > All queries are implemented as **BigQuery views** to ensure reproducibility using the public dataset.
 
-## 🚀 Getting Started
+## 🚀 How to Reproduce
 
-### Prerequisites
-- Google Cloud Platform account
-- GA4 property with eCommerce tracking enabled (or use public dataset)
-- BigQuery access
-- Looker Studio access
+1. Open BigQuery
+2. Access the GA4 public dataset: `bigquery-public-data.ga4_obfuscated_sample_ecommerce`
+3. Run SQL scripts in order: `funnel_summary.sql`, `device_time_to_purchase.sql`, `event_transitions.sql`, `funnel_data_for_viz.sql`
+4. Connect the resulting views to Looker Studio
+5. Build dashboards using the created views
 
-### How to Reproduce
-
-1. **Open BigQuery**
-2. **Access the GA4 public dataset**
-   ```
-   bigquery-public-data.ga4_obfuscated_sample_ecommerce
-   ```
-3. **Run SQL scripts** in the following order:
-   - `funnel_summary.sql`
-   - `device_time_to_purchase.sql`
-   - `event_transitions.sql`
-   - `funnel_data_for_viz.sql`
-4. **Connect the resulting views to Looker Studio**
-5. **Build dashboards** using the views created
-
-## 📊 Visualization (Looker Studio)
-
-Dashboard components include:
-- **Funnel chart** showing user progression and drop-offs
-- **Scorecards** for conversion rates at each stage
-- **Bar charts** comparing time-to-purchase by device
-- **Event transition table** highlighting latency between user actions
-
-Screenshots of the dashboards are included in this repository.
-
-## 📝 Usage
-
-1. **Run SQL Queries**: Execute the queries in BigQuery to generate analysis views
-2. **Create Visualizations**: Use Looker Studio to build interactive dashboards
-3. **Monitor Performance**: Track KPIs and identify optimization opportunities
-4. **Iterate**: Refine analysis based on business needs
 
 ## �️ Technologies Used
 
