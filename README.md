@@ -68,21 +68,6 @@ Compares conversion times across mobile, desktop, and tablet devices.
 3. **Monitor Performance**: Track KPIs and identify optimization opportunities
 4. **Iterate**: Refine analysis based on business needs
 
-## 🎬 Video Tutorial
-
-<!-- GIF olarak eklemek için: -->
-<!-- Projenizi kullanırken ekran kaydı alın ve GIF'e dönüştürün -->
-<!-- GIF'i repository'ye yükleyin ve aşağıdaki gibi gösterin: -->
-
-![How to Use](demo-tutorial.gif)
-
-<!-- Video olarak eklemek için: -->
-<!-- GitHub README'de doğrudan video embed için: -->
-<!-- 1. Issue oluşturun ve video'yu yükleyin -->
-<!-- 2. URL'yi kopyalayın ve aşağıdaki gibi kullanın: -->
-
-https://github.com/user-attachments/assets/your-video-id.mp4
-
 ## 📊 Key Metrics Tracked
 
 - Conversion Rate by Stage
